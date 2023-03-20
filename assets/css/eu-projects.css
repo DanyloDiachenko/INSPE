@@ -1,0 +1,15 @@
+@import url("./globals.css");
+@import url("./header.css");
+@import url("./footer.css");
+
+.project-code h2, h4 {
+	color: var(--gray-dark);
+}
+
+.project-code div {
+	color: var(--gray-darkest);
+} 
+
+.project-code div b {
+	font-weight: 700;
+}

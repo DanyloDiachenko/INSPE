@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@font-face {
+  	font-family: "Myriad-Pro";
+  	src: url("../../font/MyriadPro-Regular.otf");
+  	font-weight: 400;
+}
+
+
+:root {
+	--family-primary: "Montserrat", sans-serif;
+	--family-additional: "Myriad-Pro";
+	--gray-light: #b4b4b4;
+	--gray-lightest: #f4f3f3;
+	--gray-most-lightest: #f8f8f8;
+	--gray: #6d6d6d;
+	--gray-additional: #8f8f8f;
+	--gray-dark: #6f6f6f;
+	--gray-darkest: #464646;
+	--gray-most-darkest: #393737;
+	--primary: #f58220;
+	--white: #ffffff;
+	--body: #868686;
+}
+
+body {
+	color: var(--body);
+	font-family: var(--family-primary);
+	font-size: 18px;
+	font-weight: 300;
+}
+
+h2 {
+	color: var(--gray-dark);
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, hr {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+h1 {
+	font-size: 42px;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+@media(max-width: 991px) {
+	h1 {
+		font-size: 36px
+	};
+}
+@media(max-width: 500px) {
+	h1 {
+		font-size: 30px
+	};
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;	
+}
+
+h3 {
+	font-size: 26px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+h5 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+h6 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 30px;
+}
+
+.p-sm {
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.container {
+	max-width: 1250px;
+}
+
+button {
+	background: var(--primary);
+	padding: 12px 45px;
+	color: white;
+	border: none;
+	border-radius: 40px;
+}
+button:focus {
+	outline: none;
+}
+
+input, textarea {
+	width: 100%;
+	border: 2px solid #b7b7b7;
+	display: flex;
+	align-items: center;
+	font-size: 15px;
+	font-weight: 500;
+	transition: 0.3s;
+	cursor: pointer;
+	outline: none;
+}
+
+input {
+	height: 54px;
+	padding-left: 15px;
+}
+
+textarea {
+	min-height: 220px;
+	height: auto;
+    overflow-y: hidden;
+    resize: none;
+	padding: 12px 15px 0 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+	font-weight: 300;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	border: 2px solid var(--primary);
+}
+
+.mt-9 {
+	margin-top: 90px;
+}
+
+.hr-section {
+	height: 5px;
+	background-color: var(--primary);
+	width: 100px;
+	margin-top: 5px;
+}
+
+.h2-section {
+	color: var(--gray-dark);
+	text-transform: uppercase;
+}
+
+.end-center {
+	display: flex;
+	justify-content: end;
+}
+@media(max-width: 991px) {
+	.end-center {
+		justify-content: center;
+	}
+}

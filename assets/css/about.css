@@ -1,0 +1,132 @@
+@import url("./globals.css");
+@import url("./header.css");
+@import url("./footer.css");
+
+.about iframe {
+	width: 100%;
+	height: 650px;
+}
+
+.holding .right-col .end-img {
+	margin-left: 20px;
+} 
+
+@media(max-width: 991px) {
+	.holding .right-col .end-img {
+		margin-left: 0;
+	} 
+}
+@media(max-width: 560px) {
+	.holding .right-col {
+		display: block;
+		text-align: center;
+	} 
+	.holding .right-col img {
+		margin-top: 20px;
+	} 
+}
+
+.power-grafic {
+	padding: 40px 0;
+	background: var(--gray-most-lightest);
+}
+
+.power-grafic .grafic img {
+	width: 100%;
+}
+
+.team .content-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media(max-width: 1200px) {
+	.team .content-wrapper {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	.team .content-wrapper .member-wrapper {
+		margin: auto;
+	}
+}
+@media(max-width: 1000px) {
+	.team .content-wrapper {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+@media(max-width: 750px) {
+	.team .content-wrapper {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media(max-width: 600px) {
+	.team .content-wrapper {
+		grid-template-columns: 1fr;
+	}
+}
+
+.team .content-wrapper .col .member-wrapper {
+	width: 210px;
+	height: 210px;
+	background-color: #e3e7ea;
+	border-radius: 50%;
+	position: relative;
+	border: 4px solid var(--gray-light);
+}
+.team .content-wrapper .col .member-wrapper.active {
+	border: 4px solid var(--primary);
+}
+
+.team .content-wrapper .col .member-wrapper .img-fluid {
+	position: absolute;
+	bottom: 0;
+	right: 3px;
+}
+
+.team .content-wrapper .col .member-wrapper .btn-description {
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	right: 15px;
+	bottom: -4px;
+	background-color: #d1d2d4;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.team .content-wrapper .col .member-wrapper .btn-description.active {
+	background: var(--primary);
+}
+.team .content-wrapper .col .member-wrapper .btn-description.active img {
+	transform: rotate(45deg);
+}
+
+.team .content-wrapper .col .member-wrapper .facebook {
+	display: none;
+}
+.team .content-wrapper .col .member-wrapper .facebook.active {
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	background: var(--primary);
+	border-radius: 50%;
+	bottom: 0;
+	right: 15px;
+	bottom: 50px;
+}
+.team .content-wrapper .col .member-wrapper .facebook.linkedin {
+	bottom: 105px;
+}
+.team .content-wrapper .col .member-wrapper .facebook img {
+	width: 30px;
+	height: 30px;
+}
+.team .content-wrapper .col .member-wrapper .facebook.linkedin img {
+	width: 22px;
+	height: 22px;
+}
+
+.partners div img {
+	width: 100%;
+}

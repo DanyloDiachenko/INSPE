@@ -1,0 +1,32 @@
+@import url("./globals.css");
+@import url("./header.css");
+@import url("./footer.css");
+
+.map iframe {
+	height: 400px;
+	width: 100%;
+}
+
+.contacts .left-col .content {
+	padding-left: 35px;
+}
+
+.contacts .left-col .content p {
+	color: var(--gray-darkest);
+}
+
+.contacts .left-col .content p b {
+	font-weight: 700;
+}
+
+.contacts .right-col .btn-wrapper {
+	display: flex;
+	justify-content: end;
+}
+
+.contacts .right-col .btn-wrapper button {
+	background: #656565;
+	padding: 20px 45px;
+	text-transform: uppercase;
+	border-radius: 0;
+}

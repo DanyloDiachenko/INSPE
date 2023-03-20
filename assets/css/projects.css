@@ -1,0 +1,134 @@
+@import url("./globals.css");
+@import url("./header.css");
+@import url("./footer.css");
+
+.about iframe {
+	width: 100%;
+	height: 650px;
+}
+
+.partners div img {
+	width: 100%;
+}
+
+.baltic-masks {
+	background-color: var(--gray-most-lightest);
+}
+
+.baltic-masks .content h2 {
+	color: var(--gray-dark);
+}
+
+.baltic-masks .content h4 {
+	color: var(--gray-darkest);
+}
+
+.baltic-masks .content .item.d-flex img {
+	margin-right: 20px;
+}
+
+.baltic-masks .content .col-slider .content {
+	background: var(--white);
+	border: 1px solid rgb(218, 218, 218);
+}
+
+@media(max-width: 991px) {
+	.baltic-masks .content .col-slider .content  {
+		margin-top: 20px;
+	}
+}
+
+.baltic-masks .content .col-slider .content img.img-fluid {
+	width: 100%;
+}
+
+.baltic-masks .content .col-slider .arrow-slider {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid rgb(218, 218, 218);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.baltic-masks .content .col-slider .arrow-slider:hover {
+	border: 2px solid var(--primary);
+}
+
+.baltic-masks .content .col-slider .arrow-slider.right img {
+	transform: rotate(180deg);
+}
+
+.baltic-masks .content .col-slider .arrow-slider img {
+	fill: red;
+	width: 30px;
+	height: 30px;
+}
+
+.baltic-masks .content .col-slider .slider-choose {
+	padding: 10px 10%;
+}
+
+@media(max-width: 600px) {
+	.baltic-masks .content .col-slider .slider-choose {
+		padding: 10px 4%;
+	}
+}
+
+.baltic-masks .content .col-slider .slider-choose .slick-track {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+.baltic-masks .content .col-slider .slider-choose .d-flex img {
+	width: 50px;
+	height: 50px;
+}
+
+.moving .content .text {
+	margin-top: 60px;
+	line-height: 30px;
+	color: var(--gray-darkest);
+}
+
+.moving .content .buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 80px;
+}
+
+.moving .content button {
+	width: 48%;
+	padding: 17px 0;
+	border-radius: 0;
+	text-transform: uppercase;
+}
+
+.moving .content button.btn-gray {
+	background-color: #bbbaba;
+}
+
+.videos {
+	background-color: var(--gray-most-lightest);
+}
+
+.videos .content article {
+	width: 100%;
+	background: var(--white);
+	border: 1px solid rgb(218, 218, 218);
+}
+
+.videos .content article iframe {
+	width: 100%;
+	height: 425px;
+}
+
+.videos .content article .additional {
+	padding: 15px 15%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

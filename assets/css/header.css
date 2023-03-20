@@ -1,0 +1,87 @@
+header {
+	background-color: var(--gray-lightest);
+}
+
+header .menu img {
+	width: 40px;
+	height: 30px;
+	display: none;
+}
+
+header .menu .menu-content {
+	display: none;
+	width: 200px;
+	position: absolute;
+	top: 89px;
+	right: 0;
+	z-index: 10;
+	background: var(--gray-lightest);
+	border: 2px solid var(--gray-light);
+}
+header .menu .menu-content.active {
+	display: block;
+}
+
+header .menu .menu-content a {
+	color: var(--primary);
+	text-decoration: none;
+}
+
+.header-content {
+	position: relative;
+	display: flex;
+	align-items: end;
+}
+
+.header-content .header-flex {
+	display: flex;
+	gap: 30px;
+	vertical-align: bottom;
+	position: relative;
+	padding-inline-start: 0;
+}
+
+.header-content ul li .popup-additional {
+	position: absolute;
+	display: none;
+	padding: 15px 60px 15px 25px;
+	background: var(--white);
+	top: 29px;
+	z-index: 1;
+	padding-inline-start: 0;
+}
+
+.header-content ul li:hover .popup-additional {
+	display: block;
+}
+
+.header-content ul li .popup-additional ul li a:hover {
+	border-bottom: none;
+}
+
+.header-content ul li a {
+	color: var(--gray);
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.header-content ul li a:hover {
+	color: var(--primary);
+	border-bottom: 6px solid var(--primary);
+}
+
+.header-hr {
+	height: 2px;
+	background-color: var(--primary);
+	margin-top: 10px;
+}	
+
+@media(max-width: 991px) {
+	.header-content .header-flex {
+		display: none;
+	}
+	header .menu img {
+		display: block;
+		margin-bottom: 6px;
+	}
+}

@@ -1,0 +1,9 @@
+footer {
+	padding: 25px 0;
+	background-color: var(--gray-most-lightest);
+}
+
+footer div {
+	font-family: var(--family-additional);
+	color: var(--gray-light);
+}
