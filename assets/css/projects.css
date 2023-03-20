@@ -7,8 +7,13 @@
 	height: 650px;
 }
 
-.partners div img {
-	width: 100%;
+.partners {
+	background-color: var(--gray-most-lightest);
+	padding: 40px 0;
+}
+
+.partners img {
+	object-fit: contain;
 }
 
 .baltic-masks {
@@ -94,14 +99,18 @@
 	color: var(--gray-darkest);
 }
 
+.moving .content a {
+	width: 48%;
+}
+
 .moving .content .buttons {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 80px;
 }
 
-.moving .content button {
-	width: 48%;
+.moving .content .buttons button {
+	width: 100%;
 	padding: 17px 0;
 	border-radius: 0;
 	text-transform: uppercase;

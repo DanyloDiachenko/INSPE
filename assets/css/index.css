@@ -175,8 +175,13 @@
 
 /*  */
 
-.partners div img {
-	width: 100%;
+.partners {
+	background-color: var(--gray-most-lightest);
+	padding: 40px 0;
+}
+
+.partners img {
+	object-fit: contain;
 }
 
 /*  */
