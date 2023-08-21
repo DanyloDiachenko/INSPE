@@ -178,6 +178,11 @@
 .partners {
 	background-color: var(--gray-most-lightest);
 	padding: 40px 0;
+	overflow: hidden;
+}
+
+.partners .container {
+	gap: 20px;
 }
 
 .partners img {
